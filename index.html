@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fintech Vision - AI Computer Vision Solutions</title>
+    <meta
+      name="description"
+      content="AI-powered computer vision solutions for modern businesses"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                ></path>
+              </svg>
+            </div>
+            <span class="logo-text">FinVision AI</span>
+          </div>
+
+          <div class="nav-menu" id="navMenu">
+            <a href="#ourTarget" class="nav-link" data-translate="nav_home"
+              >Our target</a
+            >
+            <a href="#services" class="nav-link" data-translate="nav_services"
+              >Services</a
+            >
+            <a href="#projects" class="nav-link" data-translate="nav_projects"
+              >Projects</a
+            >
+            <a href="#team" class="nav-link" data-translate="nav_about"
+              >About</a
+            >
+            <a href="#roadmap" class="nav-link" data-translate="nav_roadmap"
+              >Roadmap</a
+            >
+            <a href="#contact" class="nav-link" data-translate="nav_contact"
+              >Contact</a
+            >
+
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+              <button class="lang-btn active" data-lang="uz">UZ</button>
+              <button class="lang-btn" data-lang="en">EN</button>
+              <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+
+            <!-- Theme Toggle -->
+            <button
+              class="theme-toggle"
+              id="themeToggle"
+              aria-label="Toggle theme"
+            >
+              <svg
+                class="sun-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                ></path>
+              </svg>
+              <svg
+                class="moon-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                ></path>
+              </svg>
+            </button>
+
+            <button class="btn-primary" data-translate="nav_get_started">
+              Get Started
+            </button>
+          </div>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-blur hero-blur-1"></div>
+      <div class="hero-blur hero-blur-2"></div>
+
+      <div class="container hero-content">
+        <div class="hero-badge" data-translate="hero_badge">
+          AI-Powered Computer Vision Solutions
+        </div>
+        <h1 class="hero-title">
+          <span data-translate="hero_title_1">Transform Your Business with</span
+          ><br />
+          <span class="gradient-text" data-translate="hero_title_2"
+            >Intelligent Vision</span
+          >
+        </h1>
+        <p class="hero-description" data-translate="hero_description">
+          State-of-the-art video analytics and computer vision technology
+          designed to enhance security, improve efficiency, and drive
+          data-driven decisions.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary btn-large">
+            <span data-translate="hero_btn_start">Start Your Project</span>
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="#services"
+            class="btn-secondary btn-large"
+            data-translate="hero_btn_learn"
+            >Learn More</a
+          >
+        </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <div class="stat-number">98%</div>
+            <div class="stat-label" data-translate="stat_accuracy">
+              Accuracy Rate
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label" data-translate="stat_monitoring">
+              Monitoring
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label" data-translate="stat_clients">Clients</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100K+</div>
+            <div class="stat-label" data-translate="stat_hours">
+              Hours Analyzed
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ourTarget" class="ourTarget">
+      <!-- Services Section -->
+      <div class="out-potntial">
+        <div class="container">
+          <h1 class="l-title">Our Vison &amp; Our Goal</h1>
+          <div class="row mt-20">
+            <div class="col-md-4">
+              <div class="pot-img mt-20">
+                <div class="img-box">
+                  <img src="/./img/pot11.png" alt="img" />
+                </div>
+                <div class="pot-box">
+                  <h2 class="font-family-medium">
+                    Finding critical point of the Business
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="pot-img mt-20">
+                <div class="img-box">
+                  <img src="/./img/pot12.png" alt="img" />
+                </div>
+                <div class="pot-box">
+                  <h2 class="font-family-medium">
+                    Full analytics of clients behaviour
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="pot-img mt-20">
+                <div class="img-box">
+                  <img src="/./img/pot13.png" alt="img" />
+                </div>
+                <div class="pot-box">
+                  <h2 class="font-family-medium">Chances to develop</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="solutions" class="solutions">
+      <div class="solutions">
+        <div class="container">
+          <h1 class="l-title">Solutions for real Problems</h1>
+          <div class="rowS">
+            <div class="col-md-6">
+              <img
+                src="./img/1.png"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6 sol-box mt-0">
+              <div class="dol-box-item">
+                <h2 class="font-family-medium">Problem</h2>
+                <p>
+                  You do not know when your employee come to work and leave
+                  office. It is unfair to pay your workers without knowing how
+                  much time they are really working and how much time they are
+                  leaving their own workplace
+                </p>
+                <h2 class="font-family-medium">Our solution</h2>
+                <p>
+                  We give you information about coming and leaving times of your
+                  employees. Our system will track time when your employee
+                  leaves his own workplace and system will notify you after
+                  fixed time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row-2">
+            <div class="col-md-6-2 sol-box-2 mt-0">
+              <div class="dol-box-item-2">
+                <div>
+                  <h2>Problem</h2>
+                  <p>
+                    It is not clear data that how many clients visit to your
+                    office or shop. During peak hours, customers may experience
+                    long wait times, leading to frustration and dissatisfaction.
+                  </p>
+                </div>
+                <div>
+                  <h2>Our solution</h2>
+                  <p>
+                    Get clear data about visitors age gender and peak hours.
+                    Manage peak hours. Target by identifying your right
+                    audience. Collect data about your clients.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span data-translate="services_title_1">Our</span>
+            <span class="gradient-text" data-translate="services_title_2"
+              >Services</span
+            >
+          </h2>
+          <p class="section-description" data-translate="services_description">
+            Comprehensive AI-powered solutions tailored to meet your business
+            needs
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="service-title" data-translate="service_1_title">
+              Video Analytics
+            </h3>
+            <p class="service-description" data-translate="service_1_desc">
+              AI-powered video analysis for real-time insights and automated
+              monitoring solutions.
+            </p>
+            <ul class="service-features">
+              <li data-translate="service_1_feat_1">✓ Real-time Detection</li>
+              <li data-translate="service_1_feat_2">✓ Object Tracking</li>
+              <li data-translate="service_1_feat_3">✓ Behavior Analysis</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="service-title" data-translate="service_2_title">
+              HR Analytics
+            </h3>
+            <p class="service-description" data-translate="service_2_desc">
+              Advanced attendance tracking and workforce analytics for improved
+              HR management.
+            </p>
+            <ul class="service-features">
+              <li data-translate="service_2_feat_1">✓ Attendance System</li>
+              <li data-translate="service_2_feat_2">✓ Staff Analytics</li>
+              <li data-translate="service_2_feat_3">✓ Performance Tracking</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="service-title" data-translate="service_3_title">
+              Security Solutions
+            </h3>
+            <p class="service-description" data-translate="service_3_desc">
+              Intelligent security systems with facial recognition and threat
+              detection capabilities.
+            </p>
+            <ul class="service-features">
+              <li data-translate="service_3_feat_1">✓ Face Recognition</li>
+              <li data-translate="service_3_feat_2">✓ Intrusion Detection</li>
+              <li data-translate="service_3_feat_3">✓ Access Control</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="service-title" data-translate="service_4_title">
+              Visitor Analytics
+            </h3>
+            <p class="service-description" data-translate="service_4_desc">
+              Track and analyze visitor patterns to optimize customer experience
+              and operations.
+            </p>
+            <ul class="service-features">
+              <li data-translate="service_4_feat_1">✓ Footfall Analysis</li>
+              <li data-translate="service_4_feat_2">✓ Heat Mapping</li>
+              <li data-translate="service_4_feat_3">✓ Customer Insights</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span data-translate="projects_title_1">Our</span>
+            <span class="gradient-text" data-translate="projects_title_2"
+              >Projects</span
+            >
+          </h2>
+          <p class="section-description" data-translate="projects_description">
+            Delivering impactful solutions across various industries
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="col-md-4">
+            <div class="bg-back-box">
+              <div class="pot-img"><img src="/./img/p11.png" alt="img" /></div>
+              <div class="pot-box">
+                <h2 class="font-family-medium">Face Recognition</h2>
+                <p>
+                  It counts only clients not employee and work with unique ID
+                  theory. It means one person is not counted twice when he enter
+                  two times within 20 minutes
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-back-box">
+              <div class="pot-img"><img src="/./img/p12.png" alt="img" /></div>
+              <div class="pot-box">
+                <h2 class="font-family-medium">Waiting time</h2>
+                <p>
+                  It identifies people by entering dates to your database. You
+                  can create new employee in your admin panel by entering
+                  required information and a clear photo of your new employee.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-back-box">
+              <div class="pot-img"><img src="/./img/p13.png" alt="img" /></div>
+              <div class="pot-box">
+                <h2 class="font-family-medium">Visitor counting</h2>
+                <p>
+                  It helps to reduce waiting time. Cameras send info about how
+                  much time wait per visitor and how much time use your service
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="howdoes" class="howdoes">
+      <div class="container">
+        <h1 class="l-title">How does it work?</h1>
+        <div class="row big-work-box-row big-work-box-row-left">
+          <div class="col-md-6 big-work-box">
+            <div class="row">
+              <div class="work-box">
+                <div class="wor-box-item">
+                  <div><img src="/./img/w1.png" alt="w1" /></div>
+                  <div>
+                    <h4>Registration</h4>
+                    <p>
+                      Send all information which is required and special board
+                      will be opened for you
+                    </p>
+                  </div>
+                </div>
+                <div class="wor-box-item-line">
+                  <div class="line-mid"></div>
+                </div>
+              </div>
+              <div class="col-md-6"></div>
+            </div>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+        <div class="row big-work-box-row big-work-box-row-right">
+          <div class="col-md-6"></div>
+          <div class="col-md-6 big-work-box">
+            <div class="row">
+              <div class="work-box">
+                <div class="wor-box-item-line">
+                  <div class="line-mid"></div>
+                </div>
+                <div class="wor-box-item">
+                  <div><img src="/./img/w2.png" alt="w2" /></div>
+                  <div>
+                    <h4>Connecting cameras</h4>
+                    <p>
+                      Connecting current cameras by entering IP adresses to
+                      platform
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row big-work-box-row big-work-box-row-left">
+          <div class="col-md-6 big-work-box">
+            <div class="row">
+              <div class="work-box">
+                <div class="wor-box-item">
+                  <div><img src="/./img/w3.png" alt="w3" /></div>
+                  <div>
+                    <h4>Deploying models</h4>
+                    <p>
+                      Choose our services and deploy them your current cameras
+                      by clicking only one button
+                    </p>
+                  </div>
+                </div>
+                <div class="wor-box-item-line">
+                  <div class="line-mid"></div>
+                </div>
+              </div>
+              <div class="col-md-6"></div>
+            </div>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+        <div class="row big-work-box-row big-work-box-row-right">
+          <div class="col-md-6"></div>
+          <div class="col-md-6 big-work-box">
+            <div class="row">
+              <div class="work-box">
+                <div class="wor-box-item-line">
+                  <div class="line-mid"></div>
+                </div>
+                <div class="wor-box-item">
+                  <div><img src="/./img/w4.png" alt="w4" /></div>
+                  <div>
+                    <h4>Observation</h4>
+                    <p>
+                      Observe useful analytics get informations and enjoy from
+                      service ...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="outTeam">
+      <div class="container">
+        <div class="team-title">
+          <h2>Our Team</h2>
+        </div>
+        <div class="team-grid">
+          <!-- 1-karta -->
+          <div class="team-card">
+            <div class="team-img">
+              <img src="./img/6.jpg" alt="Ziyodullo Elmurodov" />
+              <div class="team-overlay">
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Ziyodullo Elmurodov</h3>
+              <p>CEO & Founder</p>
+            </div>
+          </div>
+
+          <!-- 2-karta -->
+          <div class="team-card">
+            <div class="team-img">
+              <img src="./img/5.jpg" alt="Muhammad Olimov" />
+              <div class="team-overlay">
+                <div class="team-social">
+                  <a href="https://www.linkedin.com/in/olimov-muhammad-99555b30a/"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.facebook.com/share/1CvXB8knJz/"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.upwork.com/freelancers/~01801cd7629685a434"><i class="fa-brands fa-upwork"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Muhammad Olimov</h3>
+              <p>Machine learning,AI developer, Computer Vision developer </p>
+            </div>
+          </div>
+
+          <!-- 3-karta -->
+          <div class="team-card">
+            <div class="team-img">
+              <img src="./img/4.jpg" alt="Зоя Сатвалдиева" />
+              <div class="team-overlay">
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Зоя Сатвалдиева</h3>
+              <p>Designer</p>
+            </div>
+          </div>
+
+          <!-- Yana kartalar qo‘shishingiz mumkin... -->
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2 class="section-title">
+              <span data-translate="about_title_1">About</span>
+              <span class="gradient-text">Fintech Vision</span>
+            </h2>
+            <p class="about-text" data-translate="about_text_1">
+              Fintech Vision Tech specializes in building and deploying
+              state-of-the-art AI products in the computer vision sphere. We
+              combine modern technology to design novel systems that improve
+              efficiency, security, and business intelligence.
+            </p>
+            <p class="about-text" data-translate="about_text_2">
+              Our mission is to make advanced AI technology accessible to
+              businesses of all sizes, helping them harness the power of
+              computer vision to achieve their goals.
+            </p>
+            <div class="about-tags">
+              <span class="tag" data-translate="tag_1">AI Innovation</span>
+              <span class="tag" data-translate="tag_2">Computer Vision</span>
+              <span class="tag" data-translate="tag_3"
+                >Business Intelligence</span
+              >
+              <span class="tag" data-translate="tag_4">Security Solutions</span>
+            </div>
+          </div>
+
+          <div class="about-values">
+            <div class="value-card">
+              <h3 class="value-title" data-translate="value_1_title">
+                Our Vision
+              </h3>
+              <p class="value-text" data-translate="value_1_text">
+                To be the leading provider of AI-powered computer vision
+                solutions globally.
+              </p>
+            </div>
+            <div class="value-card">
+              <h3 class="value-title" data-translate="value_2_title">
+                Our Mission
+              </h3>
+              <p class="value-text" data-translate="value_2_text">
+                Empowering businesses with intelligent vision technology for a
+                smarter, safer world.
+              </p>
+            </div>
+            <div class="value-card">
+              <h3 class="value-title" data-translate="value_3_title">
+                Our Values
+              </h3>
+              <p class="value-text" data-translate="value_3_text">
+                Innovation, Excellence, Integrity, and Customer Success drive
+                everything we do.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="roadmap" class="roadmap-section">
+      <div class="container">
+          <h2 class="l-title">Roadmap & milestones</h2>
+  
+          <div class="roadmap-wrapper">
+              <!-- Timeline chiziq -->
+              <div class="timeline-line"></div>
+  
+              <!-- 1 -->
+              <div class="roadmap-item done">
+                  <div class="roadmap-dot"></div>
+                  <div class="roadmap-card">
+                      <div class="roadmap-badge done">Bajarildi</div>
+                      <h3>G‘oya</h3>
+                      <p>Xodimlarning ish joyidagi vaqtini aniq kuzatish tizimi g‘oyasi tug‘ildi</p>
+                  </div>
+              </div>
+  
+              <!-- 2 -->
+              <div class="roadmap-item done">
+                  <div class="roadmap-dot"></div>
+                  <div class="roadmap-card">
+                      <div class="roadmap-badge done">Bajarildi</div>
+                      <h3>Prototip</h3>
+                      <p>Dizayn va asosiy funksiyalar tayyorlandi, test foydalanuvchilar bilan sinovdan o‘tkazildi</p>
+                  </div>
+              </div>
+  
+              <!-- 3 – HOZIRGI BOSQICH -->
+              <div class="roadmap-item current">
+                  <div class="roadmap-dot"></div>
+                  <div class="roadmap-card">
+                      <div class="roadmap-badge current">Hozirgi bosqich</div>
+                      <h3>MVP</h3>
+                      <p>• Real vaqtda kelish-ketish<br>• Ish joyidan chiqib ketganda bildirishnoma<br>• Oddiy dashboard va hisobotlar</p>
+                  </div>
+              </div>
+  
+              <!-- 4 – KELAJAK -->
+              <div class="roadmap-item">
+                  <div class="roadmap-dot"></div>
+                  <div class="roadmap-card">
+                      <div class="roadmap-badge future">Keyingi qadam</div>
+                      <h3>Rasmiy ishga tushirish</h3>
+                      <p>• Mobil ilova (iOS & Android)<br>• Ko‘p foydalanuvchili rejim<br>• To‘lov tizimi<br>• 50+ kompaniya bilan hamkorlik</p>
+                      <span class="roadmap-date">2025-2026</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span data-translate="contact_title_1">Get in</span>
+            <span class="gradient-text" data-translate="contact_title_2"
+              >Touch</span
+            >
+          </h2>
+          <p class="section-description" data-translate="contact_description">
+            Ready to transform your business with AI-powered vision?
+          </p>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form">
+            <div class="form-row">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="form-input"
+                data-translate-placeholder="form_name"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="form-input"
+                data-translate-placeholder="form_email"
+                required
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="Subject"
+              class="form-input"
+              data-translate-placeholder="form_subject"
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              rows="6"
+              class="form-input"
+              data-translate-placeholder="form_message"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              class="btn-primary btn-large btn-full"
+              data-translate="form_submit"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <div class="logo-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+              </div>
+              <span class="logo-text">FinVision AI</span>
+            </div>
+            <p class="footer-description" data-translate="footer_desc">
+              AI-powered computer vision solutions for modern businesses.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-title" data-translate="footer_quick_links">
+              Quick Links
+            </h4>
+            <a href="#home" class="footer-link" data-translate="nav_home"
+              >Home</a
+            >
+            <a
+              href="#services"
+              class="footer-link"
+              data-translate="nav_services"
+              >Services</a
+            >
+            <a
+              href="#projects"
+              class="footer-link"
+              data-translate="nav_projects"
+              >Projects</a
+            >
+            <a href="#about" class="footer-link" data-translate="nav_about"
+              >About</a
+            >
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="footer-title" data-translate="footer_contact">
+              Contact
+            </h4>
+            <p class="footer-link">olimovmuhammad444@gmail.com</p>
+            <p class="footer-link">+998 91 310 25 85</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p data-translate="footer_copyright">
+            &copy; 2025 Fintech Vision. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
